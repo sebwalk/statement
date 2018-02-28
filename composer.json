@@ -23,6 +23,5 @@
         "psr-4": {
             "SebastianWalker\\Statement\\": "src/"
         }
-    },
-    "minimum-stability": "stable"
+    }
 }

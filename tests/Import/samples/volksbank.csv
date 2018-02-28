@@ -1,0 +1,59 @@
+"Volksbank Freiburg eG"
+
+
+
+"Umsatzanzeige"
+
+
+
+"BLZ:";"12345678";;"Datum:";"05.01.2018"
+
+"Konto:";"12345678";;"Uhrzeit:";"18:42:32"
+
+"Abfrage von:";"Sebastian Walker";;"Kontoinhaber:";"Sebastian Walker"
+
+
+
+"Zeitraum:";"Alle Ums�tze";"von:";;"bis:";
+
+"Betrag in EUR:";;"von:";" ";"bis:";" "
+
+"Sortiert nach:";"Buchungstag";"absteigend"
+
+
+
+"Buchungstag";"Valuta";"Auftraggeber/Zahlungsempf�nger";"Empf�nger/Zahlungspflichtiger";"Konto-Nr.";"IBAN";"BLZ";"BIC";"Vorgang/Verwendungszweck";"Kundenreferenz";"W�hrung";"Umsatz";" "
+
+"29.12.2017";"31.12.2017";;;;;;;"ABSCHLUSS
+
+ABSCHLUSS PER 31.12.2017";;"EUR";"20,90";"S"
+
+"29.12.2017";"29.12.2017";"Sebastian Walker";"Max Mustermann";;"DE89370400440532013000";;"GENODE61FR1";"UEBERWEISUNGSGUTSCHR
+Auslagen Teamtag 2017 Rückz
+ahlung IBAN: DE893704004405
+32013000 BIC: FRSPDE66 ABWA
+: Kreiskasse Breisgau-Hochs
+chwarzwald";;"EUR";"1.202,10";"H"
+
+"27.12.2017";"22.12.2017";"GENODE61FR1";"VOLKSBANK FREIBURG";;;;;"SB-EINZAHLUNG
+Musterweg 7, Musterhausen/M
+usterhausen/DE
+22.12.2017/23:13 girocard
+GA 00000000/00000000/000000
+00000000/0000000000/1/0000
+Karteninhaber Sebastian Wal
+ker";;"EUR";"100,00";"H"
+
+"22.12.2017";"22.12.2017";;;;;;;"BARAUSZAHLUNG";;"EUR";"500,00";"S"
+
+"13.12.2017";"13.12.2017";"Sebastian Walker";"Max Mustermann";;"DE89370400440532013000";;"GENODE61FR1";"UEBERWEISUNGSGUTSCHR
+PFIX-14567789 IBAN: DE89370
+400440532013000 BIC: INGDDE
+FF";;"EUR";"310,00";"H"
+
+
+
+"22.08.2017";;;;;;;;;"Anfangssaldo";"EUR";"1.250,60";"H"
+
+"03.01.2018";;;;;;;;;"Endsaldo";"EUR";"1.250,62";"H"
+

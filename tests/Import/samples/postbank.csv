@@ -1,0 +1,12 @@
+Umsatzauskunft - gebuchte Umsätze
+Name;Sebastian Walker
+BLZ;12345678
+Kontonummer;0123456789
+IBAN;DE89370400440532013000
+Aktueller Kontostand;2.894,20 €
+Summe vorgemerkter Umsätze;0,00 €
+
+"Buchungstag";"Wertstellung";"Umsatzart";"Buchungsdetails";"Auftraggeber";"Empfänger";"Betrag (€)";"Saldo (€)"
+"12.02.2018";"12.02.2018";"Gutschrift";"Rueckzahlung Auslagen 2019 ";"Max Mustermann";"Sebastian Walker";"51,20 €";"1.116,50 €"
+"25.01.2018";"25.01.2018";"Gutschrift";"Test Einzahlung ";"Max Mustermann";"Sebastian Walker";"80,00 €";"1.065,30 €"
+"29.12.2017";"31.12.2017";"Zinsen/Entgelt";"";"Sebastian Walker";"";"-5,70 €";"985,30 €"

@@ -1,0 +1,27 @@
+{
+    "name": "sebastianwalker/statement",
+    "description": "Read, parse and match bank statements",
+    "type": "library",
+    "require": {
+        "parsecsv/php-parsecsv": "^0.4.5",
+        "nesbot/carbon": "^1.22",
+        "globalcitizen/php-iban": "^2.6"
+    },
+    "require-dev": {
+        "symfony/var-dumper": "^4.0",
+        "phpunit/phpunit": "^7.0"
+    },
+    "license": "Attribution 4.0 International (CC BY 4.0)",
+    "authors": [
+        {
+            "name": "Sebastian Walker",
+            "email": "sebastian@sebastianwalker.org"
+        }
+    ],
+    "autoload": {
+        "psr-4": {
+            "SebastianWalker\\Statement\\": "src/"
+        }
+    },
+    "minimum-stability": "stable"
+}

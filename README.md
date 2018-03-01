@@ -7,6 +7,11 @@ You can use statement to
 - Guess column mappings
 - Match domain objects with transaction descriptions (e.g. for payment processing)
 
+## Installation
+```
+composer require sebastianwalker/statement
+```
+
 ## Transactions
 ```php
 // Transaction ($amount, $description, $payer, $iban, $date)

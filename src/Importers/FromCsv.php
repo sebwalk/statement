@@ -128,11 +128,11 @@ class FromCsv implements Importer
     }
 
     /**
-     * Returns the currently used column mapping
+     * Returns the column guesser
      *
      * @return ColumnGuesser
      */
-    public function getColumnGuesser()
+    public function getGuesser()
     {
         return $this->columnGuesser;
     }

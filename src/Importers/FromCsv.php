@@ -89,7 +89,7 @@ class FromCsv implements Importer
         $parser = $this->getParser();
         $parser->offset = $this->getOffset();
         $parser->parse($this->input);
-        $this->columns = $parser->titles;
+        $this->columns = array_map("utf8_encode",$parser->titles);
 
         $this->columnGuesser = $this->getColumnGuesser($this->columns, $parser->data, $known_mapping);
         $this->normalize = $this->getNormalizer();

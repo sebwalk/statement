@@ -34,8 +34,8 @@ class DictionaryGuesser implements ColumnGuesser
         "Auftraggeber/Empf_nger",
         "Auftraggeber",
         "Empfänger",
-        "Empf�nger/Zahlungspflichtiger",
-        "Auftraggeber/Zahlungsempf�nger",
+        "Empfï¿½nger/Zahlungspflichtiger",
+        "Auftraggeber/Zahlungsempfï¿½nger",
     ];
 
     /**

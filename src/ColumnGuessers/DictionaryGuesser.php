@@ -1,6 +1,8 @@
 <?php
 namespace SebastianWalker\Statement\ColumnGuessers;
 
+use CMPayments\IBAN;
+
 class DictionaryGuesser implements ColumnGuesser
 {
     /**
@@ -134,8 +136,8 @@ class DictionaryGuesser implements ColumnGuesser
                     $iban_counts[$key] = 0;
                 }
 
-                $iban = new \IBAN($value);
-                if($iban->Verify()){
+                $iban = new IBAN($value);
+                if($iban->validate()){
                     $iban_counts[$key]++;
                 }
             }

@@ -4,35 +4,58 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "content-hash": "60b430e43782f6bc14f533afb7e6a8ba",
+    "content-hash": "92d9f7507166fc76773ab2152c359677",
     "packages": [
         {
-            "name": "globalcitizen/php-iban",
-            "version": "v2.6.1",
+            "name": "cmpayments/iban",
+            "version": "1.1.0",
             "source": {
                 "type": "git",
-                "url": "https://github.com/globalcitizen/php-iban.git",
-                "reference": "3de32bd2c02ebb5fe0694fd28d2d1a5d2f0ec291"
+                "url": "https://github.com/cmpayments/iban.git",
+                "reference": "f3666e58a00f166e43eafc46a9b502ad971ca954"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/globalcitizen/php-iban/zipball/3de32bd2c02ebb5fe0694fd28d2d1a5d2f0ec291",
-                "reference": "3de32bd2c02ebb5fe0694fd28d2d1a5d2f0ec291",
+                "url": "https://api.github.com/repos/cmpayments/iban/zipball/f3666e58a00f166e43eafc46a9b502ad971ca954",
+                "reference": "f3666e58a00f166e43eafc46a9b502ad971ca954",
                 "shasum": ""
+            },
+            "require": {
+                "php": ">=5.5"
+            },
+            "require-dev": {
+                "jakub-onderka/php-parallel-lint": "^0.9.0",
+                "phpunit/phpunit": "^4.7|>=5.0 <5.4",
+                "squizlabs/php_codesniffer": "^2.3"
+            },
+            "suggest": {
+                "ext-bcmath": "Because this library makes use of bcmod function, bcmath extension is recommended for performance.",
+                "phpunit/phpunit": "If PHP Unit is not globally installed on your system the tests will not run, install the PHP Unit package locally to run the tests"
             },
             "type": "library",
             "autoload": {
-                "files": [
-                    "oophp-iban.php",
-                    "php-iban.php"
-                ]
+                "psr-4": {
+                    "CMPayments\\": "src/lib/"
+                }
             },
             "notification-url": "https://packagist.org/downloads/",
             "license": [
-                "LGPL-3.0"
+                "MIT"
             ],
-            "description": "php-iban is a library for parsing and validating IBAN (and IIBAN) bank account information.",
-            "time": "2017-08-10T17:28:10+00:00"
+            "authors": [
+                {
+                    "name": "Bas Peters",
+                    "email": "bp@cm.nl",
+                    "homepage": "https://github.com/baspeters"
+                }
+            ],
+            "description": "IBAN utility library",
+            "homepage": "http://github.com/cmpayments/iban",
+            "keywords": [
+                "IBAN",
+                "validation"
+            ],
+            "time": "2018-02-19T14:55:51+00:00"
         },
         {
             "name": "nesbot/carbon",
@@ -1836,6 +1859,8 @@
     "stability-flags": [],
     "prefer-stable": false,
     "prefer-lowest": false,
-    "platform": [],
+    "platform": {
+        "php": "^5.3.3 || ^7.0"
+    },
     "platform-dev": []
 }

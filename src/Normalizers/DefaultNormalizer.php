@@ -3,6 +3,7 @@
 namespace SebastianWalker\Statement\Normalizers;
 
 use Carbon\Carbon;
+use CMPayments\IBAN;
 
 class DefaultNormalizer implements Normalizer
 {
@@ -61,11 +62,11 @@ class DefaultNormalizer implements Normalizer
      */
     public function iban($string)
     {
-        $iban = new \IBAN($string);
-        if(!$iban->Verify()){
+        $iban = new IBAN($string);
+        if(!$iban->validate()){
             return null;
         }
-        return $iban->MachineFormat();
+        return $iban->format();
     }
 
     /**

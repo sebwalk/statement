@@ -12,13 +12,16 @@ class PrefixMatcher implements Matcher
      */
     private $prefix;
 
+    private $fixedLength;
+
     /**
      * PrefixMatcher constructor.
      * @param string $prefix
      */
-    public function __construct($prefix)
+    public function __construct($prefix, $fixedLength = null)
     {
         $this->prefix = $prefix;
+        $this->fixedLength = $fixedLength;
     }
 
     /**
@@ -71,6 +74,10 @@ class PrefixMatcher implements Matcher
      */
     private function getRegex()
     {
+        if($this->fixedLength){
+            return '/'.$this->prefix.'(.{'.intval($this->fixedLength).'})/';
+        }
+
         return '/(?:^|\s)'.$this->prefix.'{1}([^\s]+)/';
     }
 }

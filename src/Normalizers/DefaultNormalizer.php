@@ -111,7 +111,9 @@ class DefaultNormalizer implements Normalizer
         }
 
         return trim(
-            preg_replace('/\s+/', ' ', strval($string))
+            preg_replace('/\s+/', ' ', preg_replace(
+                "/\r|\n/", "", strval($string)
+            ))
         );
     }
 }

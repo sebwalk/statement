@@ -5,7 +5,7 @@ class IbanTest extends \PHPUnit\Framework\TestCase
     public function testValidIban()
     {
         $output = $this->normalizer()->iban("DE89370400440532013000");
-        $this->assertEquals("DE89370400440532013000", $output);
+        $this->assertEquals("DE89 3704 0044 0532 0130 00", $output);
     }
 
     public function testInvalidIban()

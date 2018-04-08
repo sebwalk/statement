@@ -12,21 +12,21 @@ class ImportVolksbankCsvTest extends ImportCsvTest
         return [
             new \SebastianWalker\Statement\Transaction(
                 20.9,
-                "ABSCHLUSS ABSCHLUSS PER 31.12.2017",
+                "ABSCHLUSSABSCHLUSS PER 31.12.2017",
                 null,
                 null,
                 new \Carbon\Carbon("2017-12-29")
             ),
             new \SebastianWalker\Statement\Transaction(
                 1202.1,
-                "UEBERWEISUNGSGUTSCHR Auslagen Teamtag 2017 Rückz ahlung IBAN: DE893704004405 32013000 BIC: FRSPDE66 ABWA : Kreiskasse Breisgau-Hochs chwarzwald",
+                "UEBERWEISUNGSGUTSCHRAuslagen Teamtag 2017 Rückzahlung IBAN: DE89370400440532013000 BIC: FRSPDE66 ABWA: Kreiskasse Breisgau-Hochschwarzwald",
                 "Sebastian Walker",
-                "DE89370400440532013000",
+                "DE89 3704 0044 0532 0130 00",
                 new \Carbon\Carbon("2017-12-29")
             ),
             new \SebastianWalker\Statement\Transaction(
                 100,
-                "SB-EINZAHLUNG Musterweg 7, Musterhausen/M usterhausen/DE 22.12.2017/23:13 girocard GA 00000000/00000000/000000 00000000/0000000000/1/0000 Karteninhaber Sebastian Wal ker",
+                "SB-EINZAHLUNGMusterweg 7, Musterhausen/Musterhausen/DE22.12.2017/23:13 girocardGA 00000000/00000000/00000000000000/0000000000/1/0000Karteninhaber Sebastian Walker",
                 "GENODE61FR1",
                 null,
                 new \Carbon\Carbon("2017-12-27")
@@ -40,9 +40,9 @@ class ImportVolksbankCsvTest extends ImportCsvTest
             ),
             new \SebastianWalker\Statement\Transaction(
                 310,
-                "UEBERWEISUNGSGUTSCHR PFIX-14567789 IBAN: DE89370 400440532013000 BIC: INGDDE FF",
+                "UEBERWEISUNGSGUTSCHRPFIX-14567789 IBAN: DE89370400440532013000 BIC: INGDDEFF",
                 "Sebastian Walker",
-                "DE89370400440532013000",
+                "DE89 3704 0044 0532 0130 00",
                 new \Carbon\Carbon("2017-12-13")
             ),
             new \SebastianWalker\Statement\Transaction(

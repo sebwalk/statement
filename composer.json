@@ -3,7 +3,7 @@
     "description": "Read, parse and match bank statements",
     "type": "library",
     "require": {
-        "php": "^5.3.3 || ^7.0",
+        "php": "^7.0",
         "parsecsv/php-parsecsv": "^0.4.5",
         "nesbot/carbon": "^1.22",
         "cmpayments/iban": "^1.1"

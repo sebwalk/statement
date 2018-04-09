@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "content-hash": "92d9f7507166fc76773ab2152c359677",
+    "content-hash": "7a2587160a089cb3188407b30ceaf2a0",
     "packages": [
         {
             "name": "cmpayments/iban",
@@ -1860,7 +1860,7 @@
     "prefer-stable": false,
     "prefer-lowest": false,
     "platform": {
-        "php": "^5.3.3 || ^7.0"
+        "php": "^7.0"
     },
     "platform-dev": []
 }

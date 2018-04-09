@@ -88,7 +88,7 @@ class FromCsv implements Importer
 
         $parser = $this->getParser();
         $parser->offset = $this->getOffset();
-        $parser->parse($this->input);
+        $parser->parse($this->input, null, null, []);
         $this->columns = array_map("utf8_encode",$parser->titles);
 
         $this->columnGuesser = $this->getColumnGuesser($this->columns, $parser->data, $known_mapping);
@@ -152,7 +152,7 @@ class FromCsv implements Importer
     {
         $parser = $this->getParser();
         $parser->heading = false;
-        $parser->parse($this->input);
+        $parser->parse($this->input, null, null, []);
 
         foreach($parser->data as $index=>$row){
             if(array_search("", $row) === false && count($row) > $this->minColumns){
@@ -229,7 +229,7 @@ class FromCsv implements Importer
      */
     private function getParser()
     {
-        $parser = new \parseCSV();
+        $parser = new \parseCSV(null, null, null, []);
         $parser->delimiter = $this->delimiter;
         $parser->convert_encoding = true;
         return $parser;
